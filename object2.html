@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+<title>
+	
+</title>
+
+<style>
+
+canvas {
+	background-color: red;
+	width: 300px;
+	height: 300px;
+}	
+</style>
+
+</head>
+
+<body>
+	
+<canvas id="myCanvas"></canvas>
+
+<script>
+
+	/*function nameOfFunction(){
+		statements here
+	}
+*/
+	var canvas = document.getElementById('myCanvas');
+	var ctx = canvas.getContext ('2d');
+
+/*	
+	lineObject = {
+	startX:0,
+	startY:0,
+	finishX:0,
+	finishY: 400,
+	ctx:  ctx,
+	drawLine: function(){
+		this.ctx.beginPath();
+		this.ctx.moveTo(this.startX, this.startY);
+		this.ctx.lineTo(this.finishX, this.finishY);
+		this.ctx.stroke();
+	}
+}
+
+	/* function nameOfFunction(){
+		statements here
+	}
+	*/
+
+	function lineMaker(startX, startY, finishX, finishY, ctx){
+		this.startX = startX;
+		this.startY = startY;
+		this.finishX = finishX;
+		this.finishY = finishY;
+		this.ctx = ctx;
+		this.drawLine = function(){
+			this.ctx.beginPath();
+			this.ctx.moveTo(this.startX, this.startY);
+			this.ctx.lineTo(this.finishX, this.finishY);
+			this.ctx.stroke();
+		} 
+
+	}
+
+	lines = [];
+	
+	line1 = new lineMaker(10,0,10,400,ctx);
+	console.log(line1);
+	line1.drawLine();
+
+	x = 0
+	totalLines = 0;
+	while(x<=totalLines){
+		totalLines = ctx.canvas.width;
+		lines[x] = new lineMaker(x,0,x,totalLines,ctx);
+		x = x+5;
+
+
+	}
+
+	console.log(lines);
+
+	for(x in lines){
+		lines[x].drawLine();
+	}
+
+</script>
+
+</body>
+
+</html>
