@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> 
+	<link href="style.css" rel ="stylesheet">
+
+
+<script>
+
+function myFunction(param) {
+	value = param
+	console.log(value);
+	images = ['ecleticstlye.jpeg', 'minimalist style.jpeg', 'hypebeaststyle.jpeg', 'rocknrollstyle.jpeg', ];
+	text = '';
+
+	
+	switch(value) {
+		case 0:
+			text = "A Banana Split. Your personal style is:  Eclectic ";
+			break;
+		case 1: 
+			text = "Vanilla Ice Cream. Your personal style is:  Minimalist";
+			break;
+		case 2: 
+			text = "Frose. Your personal style is:  Hypebeast";
+			break;
+		case 3: 
+			text = "Rocky Road.  Your personal style is:  Rock n Rolla";
+			break;
+
+	}
+
+	document.getElementById("personalitytext").innerHTML= text;
+	document.getElementById("dessert").src= images[value];
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="main">
+
+	<div id="mainbody">
+		<H1>Your personal style<br>
+		 (based on your dessert of choice)</H1>
+
+		<p>If you were to pick any dessert in the world:</p>
+
+		<button class="button" onclick="myFunction(0)">A Banana Split</button><br>
+		<button class="button" onclick="myFunction(1)">Vanilla Ice Cream</button><br>
+		<button class="button" onclick="myFunction(2)">Frose</button><br>
+		<button class="button" onclick="myFunction(3)">Rocky Road</button><br>
+		
+
+	</div>
+
+
+
+	<div id="assessment">
+		<h3>Assessment</h3>
+		<p id="answer"></p>
+		<p id="personalitytext"></p>
+		<img id="dessert" src="">
+	</div>
+
+</div>
+
+
+
+
+
+
+</body>
+
+<style>
+body {
+	background-color: #E2FFFF;
+}
+button {
+	background-color: orange;
+ </style>
+
+
+
+</html>
