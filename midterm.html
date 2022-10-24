@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>
+	Midnight Canvas
+	</title>
+	
+
+	<style>
+
+		#myCanvas{
+			border:  1px solid;
+			background-image:  linear-gradient(#D0312D, navy);
+			width: 600px;
+			height: 600px;
+		}
+	
+		body{
+ color:White;
+ background-color: #1b1b1b}
+<
+}
+	</style>
+</head>
+<body>
+
+<h1> Red Blood Cells</h1>
+
+<h3 id="demo" onclick="myFunction()">CARRYING OXYGEN THROUGH THE BODY. Click me.</h3>
+
+<canvas id="myCanvas"></canvas>
+
+<button class="Change color"
+        type="button">
+    Red Blood Cells
+</button>
+
+<script >
+
+function myFunction() {
+  document.getElementById("demo").style.color = "#dc143c";
+}
+
+const btn = document.querySelector('button');
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+document.addEventListener('DOMContentLoaded', () => {
+  canvas.width = document.documentElement.clientWidth;
+  canvas.height = document.documentElement.clientHeight;
+})
+
+function random(number) {
+  return Math.floor(Math.random()*number);
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < 100; i++) {
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255,0,0,0.5)';
+    ctx.arc(random(canvas.width), random(canvas.height), random(50), 0, 2 * Math.PI);
+    ctx.fill();
+  }
+}
+
+btn.addEventListener('click',draw);
+
+var myList = ['red blood cells', 'white blood cells', 'platlets'];
+	myList [1];
+	var myObject = {
+		name: "Red blood Cells", 
+		color: "red",
+		size: "small",
+		shape: "circular",
+		notice: function(param){
+			alert (this.name)
+
+		}
+	}
+ 
+
+	
+
+
+</script>
+</canvas>
+<body>
+	
+</body>
+
+</html>
