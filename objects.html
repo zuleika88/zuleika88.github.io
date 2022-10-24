@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<script>
+	var myList = ['apple', 'banana', 'orange'];
+	myList [1];
+	var myObject = {
+		name: "Denise", 
+		design: "glitter",
+		length: "long",
+		type: "squoval",
+		notice: function(param){
+			alert (this.name)
+
+		}
+	}
+
+	myObject.notice();
+
+	function nailDesign(name, design, length, shape){
+		this.name = name;
+		this.design = design;
+		this.length = length;
+		this.shape = shape;
+		this.notice = function (){
+			alert(this.name + 'design is' + this.design);
+
+		}
+	}
+	
+	var denise = new nailDesign('denise', 'glitter', 'long', 'squoval');
+	console.log(denise);
+
+console.log(document);
+/*
+	function nameofFunction (param1, param 2, etc) {
+		statement here
+	}
+	*/
+</script>
+	
+	<title></title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
