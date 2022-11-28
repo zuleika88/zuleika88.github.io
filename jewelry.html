@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+
+  
+    <title></title>
+<style>
+		body
+		{background-color: #00cc9e}
+	
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HAARLEM Sans', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 210px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #CA9E06;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #878787;
+}
+
+.nav-items a{
+    margin-left: 20px;
+}
+
+.nav-items a img{
+    width: 30px;
+}
+	
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #f4f4f4;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 45px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #F5F5F5;
+    opacity: 1;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+.header-section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+ height: 650px;
+ background-image: url('antiques.jpg');
+ background-image: center center;
+ background-size: cover;
+ opacity: 0.9;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.header-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.header-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+  .images {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 50px;
+            padding: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        .photo {
+            max-width: 31.333%;
+            padding: 0 10px;
+            height: 240px;
+        }
+  
+        .photo img {
+            width: 100%;
+            height: 100%;
+        }
+
+	</style>
+	<nav class="navbar">
+<div class="nav">
+    <img src="exquisite antiques.png" class="brand-logo" alt="">
+    <div class="nav-items">
+        <div class="search">
+            <input type="text" class="search-box" placeholder="search brand, product">
+            <button class="search-btn">search</button>
+        </div>
+        <a href="#"><img src="account.png" alt=""></a>
+        <a href="#"><img src="cart.png" alt=""></a>
+    </div>
+</div>
+</nav>
+
+<ul class="links-container">
+    <li class="link-item"><a href="#" class="link">All</a></li>
+    <li class="link-item"><a href="#" class="link">Best Sellers</a></li>
+    <li class="link-item"><a href="#" class="link">Furniture</a></li>
+    <li class="link-item"><a href="#" class="link">Tapestries</a></li>
+    <li class="link-item"><a href="#" class="link">Fine Art</a></li>
+	<li class="link-item"><a href="#" class="link">Jewelry</a></li>
+
+</ul>
+</nav>
+ <div class="images">
+        <div class="photo">
+            <p> Vintage Brooch 1936
+            <img src="brooch.jpg" alt="photo" />
+            <button class="cartButton">ADD TO CART</button>
+        </div>
+  
+        <div class="photo">
+           <p> Antique Rings 1920 
+            <img src="rings.jpg" alt="photo" />
+            <button class="cartButton">ADD TO CART</button>
+        </div>
+          
+        <div class="photo">
+            <p>Sapphire Necklace 1929
+            <img src="necklace.jpg" alt="photo" />
+            <button class="cartButton">ADD TO CART</button>
+        </div>
+    </div>
+    </div>
+</header>	    
+      
+</head>
+<script>
+
+
+document.querySelector('.cartButton').addEventListener('click', () => {
+        alert('Item In Cart')
+})
+
+
+</script>
+<body>
+
+</body>
+</html>

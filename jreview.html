@@ -1,0 +1,80 @@
+<html>
+
+	<head>
+
+		<title>First Json</title>
+	
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/eggplant/jquery-ui.css">
+
+<script>
+
+
+$(document).ready(function() {
+	$('button').click(function()
+{
+	alert('hi hi');
+});
+
+$('b2').click(function()
+{
+	alert('hi button 2');
+});
+
+/*
+[{
+	"name": "barbra",
+	"role": "faculty",
+	"college": "Queens"
+	},
+	
+
+	{
+		"name": "ariela",
+		"role": "student",
+		"college": "Queens"
+		},
+	{	
+		"name": "Emma",
+		"role": "student",
+		"college": "Queens"
+		},
+	{	"name": "Jennife",
+		"role": "student",
+		"college": "Queens"
+		},
+	{"name": "John",
+		"role": "student",
+		"college": "Queens"
+		}
+		]
+*/
+
+	barbra, ariela, emma, jennifer, john
+JSON.parse();
+
+newData = JSON.parse('[{"name": "Barbra","role": "faculty","college":
+	"Queens"}, {'[{"name': "Moses","role": "faculty","college": "Queens"}]');
+
+console.log(newData);
+
+
+$.get("https://dog.ceo/api/breeds/image/random", function(data) {
+	console.log(data);
+	dogImg = 'img=src="' + data
+	$('#dogPic').html('in the div')
+
+});
+alert(data.status);
+});
+</script>
+	</head>
+	<body>
+	<button>Here is my button</button>
+	<button>"id = "b2" This is Button 2 </button>
+	</body>
+
+</html>
