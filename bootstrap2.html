@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Bringing it all together</title>
+    
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-6">Nudge Logo</div>
+
+    		<div class="col-md-6 text-right">
+   
+    			<ul class="list-group list-group-horizontal">
+  			<li class="list-group-item">Work</li>
+  			<li class="list-group-item">Studio</li>
+  			<li class="list-group-item">What We Do</li>
+  			<li class="list-group-item">Journal</li>
+  				</ul>
+    		</div>
+    	</div>
+	</div>
+    
+  <div class ="container">
+    <div class="row">
+    	<div class="col-1"></div>
+    	<div class="col-10">
+    		<h1> Creative Ideas. Thoughtful Design. Tangible Results.</h1>
+    		<p class="text-center">
+    		<p class="text-center">
+    	
+    		<p> Nudge is a comprehensive design studio based in Charleston S.C.  We work with individuals and organizations of all sizes to bring ideas to life through thoughtful, client oriented design solutions.</p>
+    	</div>
+
+		<div class="col-1"></div>
+    </div>
+</div>
+
+    
+    <div class="container">
+    	
+    	<div class="row">
+    		<div class="col-md-8">
+
+    			<p id="placeholder"><p>
+    
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>
+ 
+ 
+
+
+</div>
+
+    	
+<!--end carousel--> 
+	</div>	
+   		
+    		
+    		</div>
+<!--end column-->
+    		<div class="col-md-4">
+    		<img src="monument.jpg" class="img-fluid" alt="...">
+    	</div>
+    </div>
+
+    
+<!--JAVASCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+
+	<script>
+	  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+	   $.get("https://dog.ceo/api/breeds/image/random",function(
+	   	data, status){
+	   	console.log(data['message']);
+	   	html = '<img src="' + data['message'] + '">'
+	   	 console.log(html);
+	   	 $("#placeholder").html(html);
+    
+});
+	
+	
+
+	
+
+</script>
+  </body>
+
+</html>

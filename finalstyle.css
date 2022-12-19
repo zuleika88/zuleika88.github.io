@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+*
+
+{
+      margin: 0;
+      padding: 0;
+      }
+
+  body
+  {
+
+  font-family:sans-serif;
+
+  }
+
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar
+{
+
+  background-image: linear-gradient(to right, #07da63, #09B051);
+  padding: 0 !important;
+
+}
+
+.navbar-brand img
+{
+
+    height: 35px;
+    padding-left: 20px;
+}
+
+.navbar-nav li
+{
+
+    padding: 0 10px;
+
+}
+
+.navbar-nav li a 
+{
+
+    color: #fff !important;
+    font-weight: 600;
+}
+
+
+/*------BANNER SECTION-----*/
+
+#banner
+{
+    background-image: linear-gradient(to right, #07da63, #09B051);
+    color: #FFFFe4;
+    padding top: 5%;
+
+}
+
+.nutrition-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.bottom-img
+{
+
+    width: 100%;
+}
+/*-------Getting Started Section------*/
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+    

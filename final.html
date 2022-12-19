@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>FINAL PROJECT</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="finalstyle.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/le-frog/jquery-ui.css">
+
+  
+    
+     
+
+
+  
+
+  </head>
+ 
+  <body>
+      <section>
+    
+  <section id="nav-bar">
+
+   <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="getdished.png" alt="get dished logo" style="width:200px;height:100px;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">RECIPES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">NUTRITION ID</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">NUTRITION DIARY</a>
+      </li>
+  </div>
+</nav>
+
+
+      
+
+      </section>
+
+<!--BANNER SECTION-->
+
+     <section id="banner">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+      <p class="nutrition-title">NUTRITION IS WHERE IT STARTS!</p>
+      <p>Get The Dish offers the top nutritional advice and programs! Become part of our wellness community and get the best recipes, meal plans, and nutritonal information right at your fingertips.
+       </div>
+
+       <div class="col-md-6 text-center">
+       <img src="cooking2.png" alt="cooking in the kitchen 2" class="image-fluid"> 
+
+
+
+        </div>
+        </div>
+        </div>
+
+          <img src="wave1.png" alt="the wave" class="bottom-img">
+
+    </section>
+
+
+<!-----Getting Started Section----->
+
+  <section id="getting-started">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+       <p class="started-title">LET'S GET STARTED!</p>
+       <p>Your tastebuds can start you off on the path to better foods, flavors, and a balanced diet. Ingredients are where it all starts!<p>
+      
+
+
+  
+
+        </div>
+        </div>
+        </div>
+
+        <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Recipes For Your Ingredients</h2>
+        
+    <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+ 
+ <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+         </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!--Javascript-->
+      
+    <!--Javascript links-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+    <script src="final.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+
+  </body>
+</html>
