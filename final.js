@@ -5,7 +5,7 @@ $.get("https://api.spoonacular.com/recipes/complexSearch", function(data,status)
       results = data['message']
           console.log(results);
 
-      });
+      })
 });
 
 
